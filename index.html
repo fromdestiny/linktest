@@ -148,6 +148,20 @@ var loader = tui.util.defineModule('appLoader', {
         alert('load() is not implemented!');
     }
 });
+    
+    
+       loader.setParams({
+            appURI: [
+                'intent://open#Intent',
+                'scheme=xxpayco',
+                'package=com.nhnent.payapp',
+                'S.browser_fallback_url=http%3A%2F%2Fwww.payco.com',
+                'end'
+            ].join(';'),
+
+            fallbackURL: 'http://www.payco.com'
+        });
+        loader.load();
   
 </script>
 
