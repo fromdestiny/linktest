@@ -9,7 +9,8 @@
 
 <br>
 <!-- <button onclick="myFunction()">gogo Myfunction</button> -->
-<script>
+<a href="intent://scan/#Intent;scheme=zxing;package=com.google.zxing.client.android;S.browser_fallback_url=http%3A%2F%2Fzxing.org;end"> Take a QR code </a>
+  <script>
   
 /*
 var intentURI = [
@@ -19,9 +20,9 @@ var intentURI = [
     'S.browser_fallback_url=http%3A%2F%2Fwww.naver.com',
     'end'
 ].join(';');
-*/
-location.href = "intent://reserve?projectId=1234#Intent;scheme=com.buxikorea.buxi.user;package=com.buxikorea.buxi.user;S.browser_fallback_url=http%3A%2F%2Fwww.naver.com;end"
-  
+
+location.href = "intent://reserve/projectId=1234#Intent;scheme=com.buxikorea.buxi.user;package=com.buxikorea.buxi.user;S.browser_fallback_url=http%3A%2F%2Fwww.naver.com;end"
+*/  
 function myFunction() {
               location.href = "intent://reserve?projectId=1234#Intent;scheme=com.buxikorea.buxi.user;package=com.buxikorea.buxi.user;end";
          }
