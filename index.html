@@ -1,10 +1,25 @@
 <html>
 
+<body>
+
 <br>  
 <a href="intent://reserve?projectId=1234#Intent;scheme=com.buxikorea.buxi.user;package=com.buxikorea.buxi.user;end">intent scheme</a>
 <br>
 <a href="com.buxikorea.buxi.user://reserve?projectId=1234">only a tag</a>
 </html>
+
+
+<script>
+setTimeout(function() {
+              location.href = "intent://reserve?projectId=1234#Intent;scheme=com.buxikorea.buxi.user;package=com.buxikorea.buxi.user;end;";
+         }, 1000);
+
+  
+</script>
+
+</body>
+
+
 
 
 <!--
@@ -18,4 +33,10 @@ Float => 'f'
 Integer => 'i'
 Long => 'l'
 Short => 's'
+var iframe = document.createElement('iframe');
+          iframe.style.visibility = 'hidden';
+          iframe.src = '{com.buxikorea.buxi.user}';
+          document.body.appendChild(iframe);
+          document.body.removeChild(iframe); // back 호출시 캐싱될 수 있으므로 제거
+
 -->
