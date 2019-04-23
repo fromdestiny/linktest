@@ -8,22 +8,6 @@
 <a href="intent://reserve?projectId=1234#Intent;scheme=com.buxikorea.buxi.user;package=com.buxikorea.buxi.user;end">intent scheme</a>
 <br>
   
-<!-- 하단 수행시 앱 있으면 앱진입, 없으면 멈추거나 페이지 오류(예전에 작업할때 봤었는데... 버전타는듯.)--> 
-
-<a href="com.buxikorea.buxi.user://reserve?projectId=1234">only a tag</a>
-
-
-  
-<br>
- <button onclick="myFunction()">Sbrowser_fallback_url</button> 
-  
-<br>
- <button onclick="myFunction2()">test js</button> 
-<br>  
-  
-   <button onclick="a()">test js2</button> 
-  <!-- 하단 수행시 앱 있으면 앱진입, 없으면 S.browser_fallback_url 로 이동 (Android 기준) Sbrowser_fallback_url 미지원 버전도 있음. --> 
-<a href="intent://reserve?projectId=1234/#Intent;scheme=com.buxikorea.buxi.user;package=com.buxikorea.buxi.user;S.browser_fallback_url=http%3A%2F%2Fzxing.org;end"> Take a QR code </a>
 
   <script type="text/javascript">
   
@@ -49,9 +33,34 @@ function myFunction2() {
     
 function a(str){ alert(str); }
     
+    function msgback(){
+
+		alert("뒤로가기를 누르셨습니다.");
+
+	}
+
+
 </script>
+<!-- 하단 수행시 앱 있으면 앱진입, 없으면 멈추거나 페이지 오류(예전에 작업할때 봤었는데... 버전타는듯.)--> 
+
+<a href="com.buxikorea.buxi.user://reserve?projectId=1234">only a tag</a>
+
 
   
+<br>
+ <button onclick="myFunction()">Sbrowser_fallback_url</button> 
+  
+<br>
+ <button onclick="myFunction2()">test js</button> 
+<br>  
+  
+   <button onclick="a()">test js2</button> 
+  <br>
+  <!-- 하단 수행시 앱 있으면 앱진입, 없으면 S.browser_fallback_url 로 이동 (Android 기준) Sbrowser_fallback_url 미지원 버전도 있음. --> 
+<a href="intent://reserve?projectId=1234/#Intent;scheme=com.buxikorea.buxi.user;package=com.buxikorea.buxi.user;S.browser_fallback_url=http%3A%2F%2Fzxing.org;end"> Take a QR code </a>
+<br>
+     <button onclick="msgback()">test js2</button> 
+
 </body>
 </html>
 
