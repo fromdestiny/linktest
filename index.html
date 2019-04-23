@@ -18,7 +18,7 @@ location.href - > 바로 호출시 ... 이동이 안된다. chrome 에서 걸른
 //               location.href = "intent://reserve?projectId=1234#Intent;scheme=com.buxikorea.buxi.user;package=com.buxikorea.buxi.user;end";
 //          }    
     
-function myFunction2() {
+function getMyCoupon() {
           BuxiInterface.getMyCoupon("abcd");
      } 
     
@@ -53,7 +53,7 @@ function a(str){ alert(str); }
  <button onclick="myFunction()">Sbrowser_fallback_url</button> 
   
 <br>
- <button onclick="myFunction2()">test js</button> 
+ <button onclick="getMyCoupon()">test js</button> 
 <br>  
   
    <button onclick="a()">test js2</button> 
