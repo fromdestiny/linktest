@@ -23,7 +23,7 @@
   <!-- 하단 수행시 앱 있으면 앱진입, 없으면 S.browser_fallback_url 로 이동 (Android 기준) Sbrowser_fallback_url 미지원 버전도 있음. --> 
 <a href="intent://reserve?projectId=1234/#Intent;scheme=com.buxikorea.buxi.user;package=com.buxikorea.buxi.user;S.browser_fallback_url=http%3A%2F%2Fzxing.org;end"> Take a QR code </a>
 
-  <script>
+  <script type="text/javascript">
   
 /*
 var intentURI = [
@@ -37,12 +37,12 @@ var intentURI = [
 location.href - > 바로 호출시 ... 이동이 안된다. chrome 에서 걸른다고 함. S.browser_fallback_url 설정시 해당 페이지로 바로 이동함.          
 */ 
  
-function myFunction() {
-              location.href = "intent://reserve?projectId=1234#Intent;scheme=com.buxikorea.buxi.user;package=com.buxikorea.buxi.user;end";
-         }    
+// function myFunction() {
+//               location.href = "intent://reserve?projectId=1234#Intent;scheme=com.buxikorea.buxi.user;package=com.buxikorea.buxi.user;end";
+//          }    
     
 function myFunction2() {
-          buxi.copyCoupon("abcd");
+          window.buxi.copyCoupon("abcd");
      } 
     
 </script>
