@@ -1,36 +1,38 @@
 <html>
 
 <head>
-<script type="text/javascript">
-    function copyPromotionCodes(){
+    <script type="text/javascript">
+      function copyPromotionCodes()
+    {
         //window.buxi.copyPromotionCode("ABCDEFGH")
-        function myFunction() {
-                      var intentURI = [
-    'intent://open#Intent',
-    'scheme=nuzal://plan?id=1895&birthday=19841018&gender=M',
-    'package=com.welgram.nuzal.insurance.debug',
-    'S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.welgram.nuzal.insurance.debug',
-    'end'
-].join(';');
+        var intentURI = [
+            'intent://open#Intent',
+            'scheme=nuzal://plan?id=1895&birthday=19841018&gender=M',
+            'package=com.welgram.nuzal.insurance.debug',
+            'S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.welgram.nuzal.insurance.debug',
+            'end'
+        ].join(';');
 
-window.location.href = intentURI;
-                 }  
-        
+        window.location.href = intentURI;
     }
-</script>
+
+    
+    
+    
+    </script>
 
 </head>
 
 <body>
-    <button onclick="copyPromotionCodes()">테스트 벅시 쿠폰</button>
-    
-      <br>
+<button onclick="copyPromotionCodes()">테스트 벅시 쿠폰</button>
 
-    // 하단 수행시 앱 있으면 앱진입, 없으면 마켓이동 (Android 기준)
-    <a href="intent://open/#Intent;scheme=nuzal://plan?id=1895&birthday=19841018&gender=M;package=com.welgram.nuzal.insurance.debug;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.welgram.nuzal.insurance.debug;end">intent
-        
-        scheme</a>
-    <br>
+<br>
+
+// 하단 수행시 앱 있으면 앱진입, 없으면 마켓이동 (Android 기준)
+<a href="intent://open/#Intent;scheme=nuzal://plan?id=1895&birthday=19841018&gender=M;package=com.welgram.nuzal.insurance.debug;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.welgram.nuzal.insurance.debug;end">intent
+
+    scheme</a>
+<br>
 </body>
 </html>
 
@@ -99,7 +101,6 @@ window.location.href = intentURI;
 </body>
 
 </html>  -->
-
 
 
 <!--
