@@ -5,7 +5,15 @@
     function copyPromotionCodes(){
         //window.buxi.copyPromotionCode("ABCDEFGH")
         function myFunction() {
-                      location.href = "intent://scan/#Intent;scheme=nuzal://plan?id=1895&birthday=19841018&gender=M;package=com.welgram.nuzal.insurance;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.welgram.nuzal.insurance;end";
+                      var intentURI = [
+    'intent://open#Intent',
+    'scheme=nuzal://plan?id=1895&birthday=19841018&gender=M',
+    'package=com.welgram.nuzal.insurance.debug',
+    'S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.welgram.nuzal.insurance.debug',
+    'end'
+].join(';');
+
+window.location.href = intentURI;
                  }  
         
     }
